@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>degitalClock</title>
+	<style type="text/css">
+		#clock{
+			border: 2px solid #ddd;
+			padding: 10px;
+			background: #ddf;
+			border-radius:10px;
+		}
+	</style>
+	
+</head>
+<body>
+<span id="clock"></span>
+<script type="text/javascript">
+			function clock(){
+				var elt = document.getElementById("clock");
+				var now = new Date();
+				elt.innerHTML = now.toLocaleString();
+			}
+			setInterval(clock,1000);
+	</script>
+</body>
+</html>
